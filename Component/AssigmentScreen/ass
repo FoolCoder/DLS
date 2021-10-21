@@ -1,0 +1,269 @@
+ // this is overdue render function
+//   const overdue=({item})=>(
+
+//     <View style={styles.mainlist}>
+    
+//       <View style={styles.listview}>
+    
+//       <View style={{
+      
+//       width:width(27),
+//       justifyContent:'space-between',
+//       flexDirection:'row',
+//       marginLeft:width(2),
+//       height:height(8),
+//       alignItems:'center'
+//       }}
+//       >
+    
+//     <Image 
+//     style={{
+//       marginLeft:width(2),
+//       width:50,
+//       height:50
+//     }}
+//     source={item.img}/>
+    
+//     <View style={{
+//     height:height(8),
+//     width:width(15),
+//     justifyContent:'center',
+    
+      
+      
+//     }}>
+    
+//     <Text  style={{
+//       fontSize:totalSize(1.8)
+//     }}>
+//       {item.subjecttitle}
+//       </Text>
+    
+//     <Text style={{
+//       marginTop:height(0.4),
+//       color:"#A0ADCF"
+//     }}>
+//       {item.Teachername}
+//       </Text>
+    
+//     </View>
+    
+//     </View >
+    
+//     <View style={styles.rightlist}>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}
+//       >
+    
+//       <Image 
+//       style={{
+//         marginBottom:height(0.5)
+//       }}
+//       source={ai}/>
+//       <Text>{item.pages}</Text>
+    
+//       </TouchableOpacity>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}>
+    
+//       <Image style={{
+//         marginBottom:height(0.5)
+//       }} source={ai1}/>
+//       <Text
+      
+//       >{item.Assigneddate}</Text>
+    
+//       </TouchableOpacity>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}
+//       >
+    
+//       <Image style={{
+//         marginBottom:height(0.5)
+//       }}
+//       source={ai2}/>
+//       <Text>{item.dueDate}</Text>
+    
+//       </TouchableOpacity>
+    
+    
+//     <TouchableOpacity style={styles.Button}>
+//     <Text  style={{
+//       color:'#FFFFFF',
+//       fontSize:totalSize(1)
+//     }} >{item.button}</Text>
+//     </TouchableOpacity>
+    
+//     </View>
+//       </View>
+//     </View>
+//       )
+// // this is archive render function
+//   const archive=({item})=>(
+
+//     <View style={styles.mainlist}>
+    
+//       <View style={styles.listview}>
+    
+//       <View style={{
+      
+//       width:width(27),
+//       justifyContent:'space-between',
+//       flexDirection:'row',
+//       marginLeft:width(2),
+//       height:height(8),
+//       alignItems:'center'
+//       }}
+//       >
+    
+//     <Image 
+//     style={{
+//       marginLeft:width(2),
+//       width:50,
+//       height:50
+//     }}
+//     source={item.img}/>
+    
+//     <View style={{
+//     height:height(8),
+//     width:width(15),
+//     justifyContent:'center',
+    
+      
+      
+//     }}>
+    
+//     <Text  style={{
+//       fontSize:totalSize(1.8)
+//     }}>
+//       {item.subjecttitle}
+//       </Text>
+    
+//     <Text style={{
+//       marginTop:height(0.4),
+//       color:"#A0ADCF"
+//     }}>
+//       {item.Teachername}
+//       </Text>
+    
+//     </View>
+    
+//     </View >
+    
+//     <View style={styles.rightlist}>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}
+//       >
+    
+//       <Image 
+//       style={{
+//         marginBottom:height(0.5)
+//       }}
+//       source={ai}/>
+//       <Text>{item.pages}</Text>
+    
+//       </TouchableOpacity>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}>
+    
+//       <Image style={{
+//         marginBottom:height(0.5)
+//       }} source={ai1}/>
+//       <Text
+      
+//       >{item.Assigneddate}</Text>
+    
+//       </TouchableOpacity>
+    
+//       <TouchableOpacity style={{
+//         justifyContent:'center',
+//         alignItems:'center'
+//       }}
+//       >
+    
+//       <Image style={{
+//         marginBottom:height(0.5)
+//       }}
+//       source={ai2}/>
+//       <Text>{item.dueDate}</Text>
+    
+//       </TouchableOpacity>
+    
+    
+//     <TouchableOpacity style={styles.Button}>
+//     <Text  style={{
+//       color:'#FFFFFF',
+//       fontSize:totalSize(1)
+//     }} >{item.button}</Text>
+//     </TouchableOpacity>
+    
+//     </View>
+//       </View>
+//     </View>
+//       )
+//       const Selectcategory=()=>{
+//         if( R===1 ){
+//           return(
+//           <View style={{
+//             marginTop:height(3)
+//           }}>
+//           <FlatList
+//           data={data}
+//           keyExtractor={(item, index)=>index.toString()}
+//           renderItem={assigned}
+  
+//           />
+//   </View>
+//           )
+//         }
+//         else if(R==2){
+//           return(
+//             null
+//           )
+//         }
+//         else if (R==3){
+//           return(
+//     //         <View style={{
+//     //           marginTop:height(3)
+//     //         }}>
+//     //         <FlatList
+//     //         data={data2}
+//     //         keyExtractor={(item, index)=>index.toString()}
+//     //         renderItem={overdue}
+    
+//     //         />
+//     // </View>
+//           )
+//         }
+        
+//  else if(R==4){
+//    return(
+// //  <View style={{
+// //   marginTop:height(3)
+// // }}>
+// // <FlatList
+// // data={data3}
+// // keyExtractor={(item, index)=>index.toString()}
+// // renderItem={archive}
+
+// // />
+// // </View>
+//    )
+       
+//       }
+//     }
